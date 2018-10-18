@@ -5,15 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Register</title>
+        <!--<link rel="icon" href="favicon.ico">-->
     </head>
     <body>
         <form>
             <label for="in_FirstName">First Name:</label>
-            <input type="text" id="in_FirstName"><br> <!--Apply labels.-->
-            <label>Last Name: <input type="text"></label><br> <!--Alternate way of apply labels.-->
-            <label>Email: <input type="email" required></label><br>
+            <input type="text" name="firstname" id="in_FirstName"><br> <!--Apply labels.-->
+            <label>Last Name: <input type="text" name="lastname"></label><br> <!--Alternate way of apply labels.-->
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Password: <input type="password" name="password" minlength="8" maxlength="10"  required></label><br>
+            <label>Birthday: <input type="date" name="birthday"></label><br>
+            <label>Gender:<br>
+                <input type="radio" name="gender" value="male">Male<br>
+                <input type="radio" name="gender" value="female">Female<br>
+                <input type="radio" name="gender" value="other">Other</label><br>
+            <label>Pets:<br>
+                <input type="checkbox" name="pets" value="dog">Dog<br>
+                <input type="checkbox" name="pets" value="cat">Cat<br>
+                <input type="checkbox" name="pets" value="other">Other</label><br>
+            <label>Cars:<br>
+                <select name="cars" multiple>
+                    <option value="volvo">Volvo<br>
+                    <option value="audi">Audi<br>
+                    <option value="mercedes benz">Mercedes Benz
+                </select></label><br>
             <input type="submit" value="Register!">
             <input type="reset" value="Reset.">
-        </form>
+        </form><br>
+
+        <!--key-value pair for
+        ?<br>
+        firstname=fake<br>
+        &lastname=name<br>
+        &email=judje%40forr.com<br>
+        &password=0192837445<br>
+        &birthday=2018-10-01<br>
+        &gender=female<br>
+        &pets=dog<br>
+        &cars=volvo<br>
+        &cars=audi<br>-->
     </body>
 </html>
+
